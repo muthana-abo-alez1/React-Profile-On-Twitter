@@ -1,0 +1,27 @@
+.Who-to-follow {
+
+  width: 100%;
+  height: max-content;
+  box-sizing: border-box;
+  border-bottom: 0.1px solid #474747; 
+  padding: 10px 0 20px 0; 
+  .user-follow-suggestion-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+  }
+  .title {
+    margin: 0;
+    color: white;
+    font-size: x-large;
+    font-weight: 700;
+    padding: 0px 20px;
+  }
+
+  .show-more {
+    color: rgb(29, 155, 240);
+    text-decoration: none;
+    padding: 0px 20px;
+  }
+}
