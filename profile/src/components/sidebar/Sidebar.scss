@@ -1,0 +1,18 @@
+.sidebar{
+    width: 235px;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: fixed;
+
+    .admin{
+        margin-bottom: 15px;
+    }
+    .twitter-icon{
+        height: 50px;
+        width: 50px;
+        padding: 10px 20px;
+    }
+    
+}

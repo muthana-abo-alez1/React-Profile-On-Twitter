@@ -1,0 +1,41 @@
+.tabs-container {
+    background-color: #000;
+    color: #fff;
+    width: 100%;
+  
+    .tabs {
+      display: flex;
+      justify-content: space-around;
+      
+    }
+  
+    .tab {
+      cursor: pointer;
+      padding: 10px 10px;
+      font-weight: 400;
+      color: #bbb;
+      transition: color 0.3s ease;
+  
+      &.active {
+        color: #fff;
+        border-bottom: 3px solid #1DA1F2;
+        font-weight: 600;
+        width: max-content;
+      }
+  
+      &:hover {
+        color: #fff;
+      }
+    }
+  
+    .content-area {
+      padding: 20px;
+      background-color: #111;
+      min-height: 100px;
+  
+      .content {
+        font-size: 14px;
+      }
+    }
+  }
+  

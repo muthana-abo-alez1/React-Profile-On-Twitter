@@ -1,0 +1,41 @@
+.user-follow-suggestion {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+ 
+  .user-follow-suggestion__follow-info {
+    font-size: 0.85rem;
+    color: #999;
+    margin-bottom: 0.5rem;
+  }
+
+  .user-follow-suggestion__desc {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #bbb;
+    margin-top: 0.75rem;
+    padding-left: 60px;
+    margin: 0;
+  }
+  &__desc {
+    font-size: 14px;
+    color: #000;
+
+  }
+
+  span {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    color: #888;
+    padding-left: 30px;
+
+    svg {
+      color: #888;
+      margin-right: 10px ;
+    }
+  }
+  
+}

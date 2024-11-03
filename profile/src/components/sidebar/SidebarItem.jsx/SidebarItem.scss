@@ -1,0 +1,28 @@
+.sidebar-item {
+    display: flex;
+    align-items: center;
+    width: 220px;
+    height: 55px;
+    border-radius: 10px;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    color: white;
+    gap: 15px;
+    box-sizing: border-box;
+
+
+    &:hover {
+      background-color: #333; 
+    }
+  
+    .sidebar-icon {
+      font-size: 25px; 
+      margin: 0;
+      
+    }
+    .sidebar-text {
+      font-size: 16px; 
+      margin-bottom: 4px;
+    }
+  }

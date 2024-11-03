@@ -1,0 +1,61 @@
+.trending-tag {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px ;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &__info {
+      display: flex;
+      flex-direction: column;
+      gap: 3px;
+    }
+  
+    &__category {
+      font-size: 12px;
+      color: #888;
+      margin: 0;
+    }
+  
+    &__hashtag {
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      font-weight: bold;
+      color: white;
+  
+      &__name {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+      }
+  
+      &__icon {
+        width: 16px;
+        height: 16px;
+        margin-left: 4px;
+      }
+      img{
+        width: 20px;
+        height: 20px;
+        margin-left: 4px;
+      }
+    }
+  
+    &__post-count {
+      font-size: 12px;
+      color: #888;
+      margin: 0;
+    }
+  
+    &__ellipsis {
+      color: white;
+      cursor: pointer;
+    }
+  
+    &:hover {
+      background-color: #333;
+    }
+  }
