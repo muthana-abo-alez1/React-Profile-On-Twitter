@@ -1,38 +1,28 @@
-import React, { useState } from 'react';
-import './Tabs.scss';
+import React, { useState } from "react";
+import "./Tabs.scss";
 
 const Tabs = () => {
-  const [activeTab, setActiveTab] = useState('posts');
+  const [activeTab, setActiveTab] = useState("posts");
 
-
+  const tabs = [
+    { id: "posts", label: "Posts" },
+    { id: "replies", label: "Replies" },
+    { id: "media", label: "Media" },
+    { id: "likes", label: "Likes" },
+  ];
 
   return (
     <div className="tabs-container">
       <div className="tabs">
-        <div
-          className={`tab ${activeTab === 'posts' ? 'active' : ''}`}
-          onClick={() => setActiveTab('posts')}
-        >
-          Posts
-        </div>
-        <div
-          className={`tab ${activeTab === 'replies' ? 'active' : ''}`}
-          onClick={() => setActiveTab('replies')}
-        >
-          Replies
-        </div>
-        <div
-          className={`tab ${activeTab === 'media' ? 'active' : ''}`}
-          onClick={() => setActiveTab('media')}
-        >
-          Media
-        </div>
-        <div
-          className={`tab ${activeTab === 'likes' ? 'active' : ''}`}
-          onClick={() => setActiveTab('likes')}
-        >
-          Likes
-        </div>
+        {tabs.map((tab) => (
+          <div
+            key={tab.id}
+            className={`tab ${activeTab === tab.id ? "active" : ""}`}
+            onClick={() => setActiveTab(tab.id)}
+          >
+            {tab.label}
+          </div>
+        ))}
       </div>
     </div>
   );

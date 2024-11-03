@@ -113,22 +113,23 @@
         border-radius: 20px;
         cursor: pointer;
       }
-
       .profile-stats {
-        font-size: 14px;
+        display: flex;
+        gap: 1rem; 
+      }
+      
+      .stat {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.25rem;
 
-        span {
-          margin-right: 15px;
+        .text{
           font-size: 18;
-        }
-        strong {
-          font-weight: 600;
-          font-size: larger;
-        }
-        span.text {
+          font-weight: 400;
           color: #aaa;
         }
       }
+      
     }
   }
 }

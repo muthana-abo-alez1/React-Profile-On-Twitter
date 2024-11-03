@@ -2,7 +2,7 @@ import React from "react";
 import UserCard from "../userCard/UserCard";
 import "./UserFollowSuggestionCard.scss";
 import { FaUser } from "react-icons/fa";
-import { renderDescription } from "../../SharedFunction.js/renderDescription";
+import { renderDescription } from "../../utils/renderDescription";
 
 const UserFollowSuggestionCard = ({ user }) => {
   return (

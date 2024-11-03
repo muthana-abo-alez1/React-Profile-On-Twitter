@@ -1,6 +1,6 @@
 import React from "react";
 import "./TweetCard.scss";
-import { renderDescription } from "../../SharedFunction.js/renderDescription";
+import { renderDescription } from "../../utils/renderDescription";
 import { AiOutlineRetweet } from "react-icons/ai";
 import { FaChartBar, FaRegHeart, FaRegComment, FaEllipsisH } from "react-icons/fa";
 import { FiUpload } from "react-icons/fi";

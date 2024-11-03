@@ -21,15 +21,15 @@ import { Button } from "../buttons/Button";
 import UserCard from "../userCard/UserCard";
 const Sidebar = () => {
   const sidebarItems = [
-    { icon: <FaHome />, text: "Home" },
-    { icon: <FaSearch />, text: "Explore" },
-    { icon: <FaRegBell />, text: "Notifications" },
-    { icon: <FaRegEnvelope />, text: "Messages" },
-    { icon: <FaRegListAlt />, text: "Lists" },
-    { icon: <FaRegBookmark />, text: "Bookmarks" },
-    { icon: <FaUsers />, text: "Communities" },
-    { icon: <FaRegUser />, text: "Profile" },
-    { icon: <FaEllipsisH />, text: "More" },
+    { id: 1, icon: <FaHome />, text: "Home" },
+    { id: 2, icon: <FaSearch />, text: "Explore" },
+    { id: 3, icon: <FaRegBell />, text: "Notifications" },
+    { id: 4, icon: <FaRegEnvelope />, text: "Messages" },
+    { id: 5, icon: <FaRegListAlt />, text: "Lists" },
+    { id: 6, icon: <FaRegBookmark />, text: "Bookmarks" },
+    { id: 7, icon: <FaUsers />, text: "Communities" },
+    { id: 8, icon: <FaRegUser />, text: "Profile" },
+    { id: 9, icon: <FaEllipsisH />, text: "More" },
   ];
 
   return (
@@ -40,24 +40,24 @@ const Sidebar = () => {
           src="https://pbs.twimg.com/media/GZZQbdPWgAEJj9R?format=jpg&name=large"
           alt="Twitter Logo"
         />
-        {sidebarItems.map((item, index) => (
+        {sidebarItems.map((item) => (
           <SidebarItem
-            key={index}
+            key={item.id}
             icon={item.icon}
             text={item.text}
             showIcon={item.showIcon}
           />
         ))}
-        <Button text={"Post"} size={"large"} />
+        <Button text="Post" size="large" />
       </div>
       <div className="admin">
         <UserCard
           name="Muthana Abo Aleez"
           username="mutaboaleez"
           profilePicture="https://img.freepik.com/free-vector/smiling-young-man-illustration_1308-173524.jpg"
-          isVerified={true}
-          isAdmin={true}
-          hoverable={true}
+          isVerified
+          isAdmin
+          hoverable
         />
       </div>
     </div>
